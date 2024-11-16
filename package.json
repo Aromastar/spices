@@ -4,8 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
     "build": "tsc && vite build --emptyOutDir",
+    "dev": "vite",
+    "init:hooks": "git config core.hooksPath .github/hooks && chmod +x .github/hooks/*",
+    "init": "npm run init:hooks",
     "preview": "vite preview"
   },
   "devDependencies": {
