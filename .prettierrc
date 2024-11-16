@@ -5,3 +5,11 @@ singleQuote: true
 tabWidth: 2
 trailingComma: 'none'
 useTabs: false
+
+plugins:
+  - 'prettier-plugin-jinja-template'
+
+overrides:
+  - files: '*.html'
+    options:
+      parser: 'jinja-template'
